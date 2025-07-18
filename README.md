@@ -1,6 +1,10 @@
  # 📊 Hotel Review Analysis using BiLSTM
 
-This project is part of the final exam for the **Deep Learning** course. The goal is to analyze hotel reviews using a **Bidirectional LSTM (BiLSTM)** model to extract meaningful information from the review text. The model performs **multi-task learning**: it predicts both the **review score** (regression) and the **review sentiment** (classification into Good/Bad review).
+This project is part of the final exam for the **Deep Learning** course. 
+
+The goal is to analyze hotel reviews using a **Bidirectional LSTM (BiLSTM)** model to extract meaningful information from the review text. 
+
+The model performs **multi-task learning**: it predicts both the **review score** (regression) and the **review sentiment** (classification into Good/Bad review).
 
 ---
 
