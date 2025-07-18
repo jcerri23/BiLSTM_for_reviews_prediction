@@ -4,7 +4,7 @@ This project is part of the final exam for the **Deep Learning** course. The goa
 
 ---
 
-## 📁 Dataset
+## Dataset
 
 The input dataset is `input_data.csv` and includes the following fields:
 
@@ -22,11 +22,11 @@ The input dataset is `input_data.csv` and includes the following fields:
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 The model is based on a **Bidirectional LSTM (BiLSTM)** that processes the review text to capture both forward and backward dependencies.
 
-### 🔧 Key Components:
+### Key Components:
 
 - **Embedding Layer**: Word-level embedding of input review text  
 - **BiLSTM Layer**: To capture contextual information  
@@ -36,7 +36,7 @@ The model is based on a **Bidirectional LSTM (BiLSTM)** that processes the revie
   - **Review Score Prediction** (Regression Head)
   - **Sentiment Classification** (Binary Classification Head)
 
-### ⚙️ Activations Used:
+### Activations Used:
 
 - **ReLU**: In hidden dense layers  
 - **Sigmoid**: For binary classification output  
@@ -44,28 +44,18 @@ The model is based on a **Bidirectional LSTM (BiLSTM)** that processes the revie
 
 ---
 
-## 🔍 Objectives
+## Objectives
 
 - Predict the **review score** given by the reviewer (continuous value between 2.5 and 10)
 - Classify the **sentiment** of the review into `Good` or `Bad`
-- Use shared representations from the BiLSTM to improve performance across both tasks
-
+  
 ---
 
-## 🧪 Experiments & Insights
+##  Experiments & Insights
 
-- ✅ Successfully trained a **multi-task model** using shared BiLSTM embeddings  
-- 🧩 Explored using an **autoencoder** to learn compressed embeddings of the review text  
-- 📈 Observed improved performance by learning shared embeddings for both regression and classification tasks
-
----
-
-## 🛠️ Future Work
-
-- 🔧 Fine-tune hyperparameters (e.g., LSTM units, dropout rate, learning rate)  
-- 🔍 Integrate **attention mechanism** for better interpretability  
-- 🧠 Experiment with **transformer-based models** (e.g., BERT)  
-- 💡 Use the learned **autoencoder embeddings** in downstream tasks
+- Train a **multi-task model** using shared BiLSTM embeddings  
+- Explored using an **autoencoder** to learn compressed embeddings of the review text
+- Fine-tune hyperparameters 
 
 ---
 
